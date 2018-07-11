@@ -1,4 +1,4 @@
-# autonomous-rc
+# selfdriving-rc
 
 In this project, I built an autonomous RC car using Raspberry Pi, a Pi Camera, and a [toy-grade RC car](https://www.ebay.com/itm/R-C-Tech-Brix-Remote-Control-Customize-Body-w-Lego-Mega-Bloks-Any-Brick-System-/183036421261) (I found this for $5 at Five Below.)
 
