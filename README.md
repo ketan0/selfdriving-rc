@@ -2,4 +2,4 @@
 
 This project aims to build a self-driving RC car using Raspberry Pi and Scikit-learn to train a neural network.
 
-![Self-driving test](https://youtu.be/YU4ZBRIoXNQ)
+[![Autonomous test](https://img.youtube.com/vi/dCyBvLjW6X0/maxresdefault.jpg)](https://www.youtube.com/watch?v=bulzQxh9DlI)
