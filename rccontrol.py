@@ -4,6 +4,14 @@ import time
 import copy
 import os
 
+'''
+In order to send commands, one must simultaneously
+run `sudo ./pi_pcm -v` in a separate terminal window
+from the pi-rc directory while running this Python script.
+(Must have also ran "make" once in that directory to
+produce the pi_pcm executable.)
+'''
+
 TCP_IP = "127.0.0.1"
 TCP_PORT = 12345 #default socket used by pi-rc code.
 
@@ -15,7 +23,7 @@ command_repeats = {
     "forward" : 11,
     "left" : 59,
     "forward_left" : 27,
-    "right" = 64,
+    "right" : 64,
     "forward_right" : 33,
     "reverse" : 39,
     "reverse_left" : 51,
@@ -51,8 +59,6 @@ stop_command = [
     }
 ]
 
-#Set up the Pi to be ready to listen for JSON-formatted commands.
-os.system("sudo pi-rc/pi_pcm -v")
 
 #broadcast a command using the defined-above constants
 #sendCommand('forward'), sendCommand('stop'), etc.
