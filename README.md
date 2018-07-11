@@ -6,7 +6,9 @@ In order to control the RC, the [pi-rc](https://github.com/bskari/pi-rc) library
 
 A multi-layer perceptron (MLP) neural network classifier was implemented using [scikit-learn](http://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html#sklearn.neural_network.MLPClassifier). The network takes as input the flattened, grayscaled contents of a Pi Camera image, and classifies the images into one of four output directions: forward, left, right, or reverse. For training, the car should be driven through a track of some sort (I used paper for the lanes.)
 
+Before being input to the neural network, the images are grayscaled, cut in half (only the bottom half really contains useful info,) reduced to 288 x 96 px resolution, and flattened into a one-dimensional array.
 
+In test mode, the program continually takes a picture and chooses the most probable direction to go: either forward, left, right, or reverse.
 
 [![Autonomous car](https://img.youtube.com/vi/bulzQxh9DlI/maxresdefault.jpg)](https://www.youtube.com/watch?v=bulzQxh9DlI)
 
