@@ -66,7 +66,10 @@ def sendCommand(command_name):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect((TCP_IP, TCP_PORT))
     command = copy.deepcopy(default_command)
-    command[1]["repeats"] = command_repeats.get(command_name, "stop")
+    if command_name == 'stop':
+        command = command[:-1]
+    else:
+        command[1]['repeats'] = command_repeats.get(command_name, command_repeats["stop"])
     s.send(json.dumps(command))
     s.close()
 
@@ -78,6 +81,7 @@ def goDirection(command_name):
     sendCommand('stop')
 
 #may be useful to produce a quicker stop.
+#fine-tune the time in reverse according to car, surface, etc.
 def brake():
     sendCommand('reverse')
     time.sleep(0.3)
@@ -86,5 +90,8 @@ def brake():
 #ensure all commands work properly.
 def test():
     for command_name in command_repeats:
+        print 'sending command %s' % command_name
         sendCommand(command_name)
-        time.sleep(2)
+        time.sleep(1)
+        sendCommand('stop')
+        time.sleep(1)

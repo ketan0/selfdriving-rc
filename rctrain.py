@@ -39,7 +39,7 @@ def collectData():
 
     while True:
         takePicture()
-        #use WASD keys as arrow pad to tell car where to go.
+        #use WASD keys as arrow pad in console to tell car where to go.
         userInput = raw_input('Please enter a direction (Move %d): ' % n)
         while userInput != 'w' and userInput != 'a' and userInput != 's' and userInput != 'd':
             if userInput == 'x':

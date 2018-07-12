@@ -7,8 +7,10 @@ from rccontrol import *
 from sklearn.preprocessing import StandardScaler
 
 camera = PiCamera()
+print "deserializing model..." #this takes ~1 min
 model = pickle.load( open('model2.p', 'rb') )
 scaler = pickle.load( open('scaler.p', 'rb') )
+print "begin test drive"
 
 def testDrive():
     while True:
