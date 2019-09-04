@@ -51,7 +51,7 @@ def collectData():
         time.sleep(0.5)
         n += 1
 
-    print 'Finished collecting data.'
+    print('Finished collecting data.')
     #pickled array of move data (expected output for model.)
     pickle.dump( moves, open( "moves.p", "wb" ) )
 
