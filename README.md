@@ -28,6 +28,7 @@ Before being input to the neural network, the images are grayscaled, cut in half
 
 In order to run the car in test mode, run `rctest.py`. In test mode, the program continually takes a picture and passes it through the trained neural network to choose the most probable direction to go: either forward, left, right, or reverse.
 
+## Demo
 [![Autonomous car](https://img.youtube.com/vi/bulzQxh9DlI/maxresdefault.jpg)](https://www.youtube.com/watch?v=bulzQxh9DlI)
 
 ## Thanks
