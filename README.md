@@ -10,11 +10,11 @@ This project contains the code to control an RC car with a Raspberry Pi, and nav
 ## Setup
 In order to control the RC, the [pi-rc](https://github.com/bskari/pi-rc) library was used to turn the Raspberry Pi into a radio-frequency transmitter. Python functions for basic directional control are contained in `rccontrol.py`. To set up RC control, do the following from the command line on your Raspberry Pi:
 
-  git clone https://github.com/bskari/pi-rc
-  cd pi-rc
-  make
-  sudo ./pi_pcm -v
-  python3 host_files.py
+    git clone https://github.com/bskari/pi-rc
+    cd pi-rc
+    make
+    sudo ./pi_pcm -v
+    python3 host_files.py
  
 See https://github.com/bskari/pi-rc for more information on how the RC commands are formatted, and troubleshooting.
 
