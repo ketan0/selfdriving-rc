@@ -5,7 +5,7 @@ This project contains the code to control an RC car with a Raspberry Pi, and nav
 ## Materials
 - Raspberry Pi (Wi-Fi capable, such as RPi 3 Model B)
 - Pi Camera
-- RC car that runs on 27 or 49 MHz band ([this](https://www.ebay.com/itm/R-C-Tech-Brix-Remote-Control-Customize-Body-w-Lego-Mega-Bloks-Any-Brick-System-/183036421261) car worked well; found for $5 at a dollar store.)
+- RC car that runs on 27 or 49 MHz band ([this](https://www.pinterest.com/pin/543457880031801972/) car worked well; found for $5 at a dollar store.)
 
 ## Setup
 In order to control the RC, the [pi-rc](https://github.com/bskari/pi-rc) library was used to turn the Raspberry Pi into a radio-frequency transmitter. Python functions for basic directional control are contained in `rccontrol.py`. To set up RC control, do the following from the command line on your Raspberry Pi:
