@@ -90,7 +90,7 @@ def brake():
 #ensure all commands work properly.
 def test():
     for command_name in command_repeats:
-        print 'sending command %s' % command_name
+        print('sending command %s' % command_name)
         sendCommand(command_name)
         time.sleep(1)
         sendCommand('stop')
