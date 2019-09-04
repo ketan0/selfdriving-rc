@@ -1,6 +1,11 @@
 # Autonomous RC Car
 
-In this project, I built an autonomous RC car using Raspberry Pi, a Pi Camera, and a [toy-grade RC car](https://www.ebay.com/itm/R-C-Tech-Brix-Remote-Control-Customize-Body-w-Lego-Mega-Bloks-Any-Brick-System-/183036421261) (I found this for $5 at Five Below.)
+In this project, I built an autonomous RC car using Raspberry Pi, a Pi Camera, and a [toy-grade RC car](https://www.ebay.com/itm/R-C-Tech-Brix-Remote-Control-Customize-Body-w-Lego-Mega-Bloks-Any-Brick-System-/183036421261) (I found this for $5 at a dollar store.)
+
+## Materials Needed
+- Raspberry Pi (Wi-Fi capable, such as RPi 3 Model B)
+- Pi Camera
+- RC car that runs on a MhZ (not GhZ) frequency
 
 In order to control the RC, the [pi-rc](https://github.com/bskari/pi-rc) library was used to turn the Raspberry Pi into a radio-frequency transmitter. Python functions for basic directional control are contained in `rccontrol.py`. In order to send commands successfully with `rccontrol.py`, one must simultaneously run `make` and `sudo ./pi_pcm -v` in the `pi-rc` folder.
 
