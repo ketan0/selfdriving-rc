@@ -32,6 +32,7 @@ def takePicture():
     cv2.imwrite('train_images/train%d.jpg' % n, gray_image)
 
 def collectData():
+    print('Collecting training data...')
     n = 0
     camera = picamera.PiCamera()
     time.sleep(2)
